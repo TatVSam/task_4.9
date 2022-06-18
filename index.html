@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#"><img src="images/Labrador.jpg" width="150" alt="labrador"></a>
+        <a href="pages/about.html"><img src="images/Dachshund.jpg" width="150" alt="dachshund"></a>
+        <a href="pages/contacts.html" title="свяжитесь с
+нами"><img src="images/German_Shepherd.jpg" width="150" alt="german shepherd"></a>
+<hr>
+    </header>
+
+    <main>
+    <!--Текст-->  
+    <h1>Компания Nose&amp;Tail - ваша собака останется довольной!</h1>
+
+    <p>Опытные ветеринары разработают индивидуальный рацион для вашей собаки, а наши курьеры оперативно доставят ваш заказ.</p>
+   
+    <p>Заполните небольшую анкету, и мы свяжемся с вами:</p>
+    <!--Интерактивная форма-->  
+    <form>
+    <fieldset>
+    <legend>О вашей собаке</legend>
+
+    <!--Текстовые поля для имени и породы-->  
+    Имя вашей собаки <input type="text" name="nickname" placeholder="Введите имя вашей собаки" size="40">
+    <br>
+    <br>
+    Порода собаки <input type="text" name="breed" placeholder="Введите породу вашей собаки" size="40">
+    <br>
+    
+    <!--Фото-->  
+    <p>При желании можете добавить фото вашей собаки</p>
+    <input type="file" name="photo">
+    <br>
+    
+    <!--Чиловое поле для веса-->  
+    <br>
+    Вес в кг <input type="number" name="weight" placeholder="" required="required">
+    
+   <!--Пол, переключатель-->  
+    <p>Пол вашей собаки</p>
+    <input type="radio" name="sex" value="auto" id="boy"><label for="boy">Мальчик</label><br>
+    <input type="radio" name="sex" value="auto" id="girl"><label for="girl">Девочка</label><br>
+    
+    <!--Дата рождения-->  
+    <p>Дата рождения вашей собаки</p>
+    <input type="date" name="birthday" min="2000-06-17" max="2022-06-17">
+
+    <!--Тип корма, флажки-->  
+    <br>
+    <p>Чем вы кормите собаку сейчас?</p>
+    <input type="checkbox" name="type1">сухой/влажный корм<br>
+    <input type="checkbox" name="type2">сырые натуральные продукты<br>
+    <input type="checkbox" name="type3">приготовленные натуральные продукты (термообработка)<br>
+    <br>
+
+    <!--Активность, раскрывающийся список--> 
+    <p>Сколько часов в день вы гуляете со своей собакой?</p>
+    <select name="activity">
+        <option>Меньше 1 часа в день</option>
+        <option selected>2-3 часа в день</option>
+        <option>Более 3 часов в день</option>
+    </select>
+    <br>
+
+    <!--Текстовые поля, телефон и емейл--> 
+    <br>
+    <p>Оставьте свои контакты, и мы свяжемся с вами.</p>
+    <p>Ваш телефон</p>
+    
+    <input type="tel" name="phone" placeholder="Ваш номер телефона">
+   
+    <p>Ваш email</p>
+    <input type="email" name="mail" placeholder="Ваш email">
+    <br>
+
+    <!--Кнопки "отправить" и "сбросить"--> 
+    <br>
+    <input type="submit" name="submit">
+    <input type="reset" name="reset">
+    
+    </fieldset>
+    </form>
+    
+  
+       
+    </main>
+    <footer>
+
+
+        
+      <!--CC BY-SA 3.0 -->  
+        
+        <hr>
+        <span>&copy;&nbsp;Nose&amp;Tail</span>
+        89137577755, Татьяна
+    </footer>
+</body>
+</html>
