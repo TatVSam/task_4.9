@@ -9,61 +9,64 @@
 <body>
     
     <header>
-        <a href="#"><img src="images/Labrador.jpg" width="150" alt="labrador"></a>
-        <a href="pages/about.html"><img src="images/Dachshund.jpg" width="150" alt="dachshund"></a>
+        <a href="#"><img src="images/Labrador.jpg" width="230" alt="labrador"></a>
+        <a href="pages/about.html"><img src="images/Dachshund.jpg" width="230" alt="dachshund"></a>
         <a href="pages/contacts.html" title="свяжитесь с
-нами"><img src="images/German_Shepherd.jpg" width="150" alt="german shepherd"></a>
+нами"><img src="images/German_Shepherd.jpg" width="230" alt="german shepherd"></a>
 <hr>
     </header>
 
     <main>
     <!--Текст-->  
-    <h1>Компания Nose&amp;Tail - ваша собака останется довольной!</h1>
+    <h1>Компания Nose&amp;Tail &mdash; Ваша собака останется довольной!</h1>
 
-    <p>Опытные ветеринары разработают индивидуальный рацион для вашей собаки, а наши курьеры оперативно доставят ваш заказ.</p>
+    <p>Опытные ветеринары разработают индивидуальный рацион для Вашей собаки, а наши курьеры оперативно доставят заказ.</p>
    
-    <p>Заполните небольшую анкету, и мы свяжемся с вами:</p>
+    <p>Заполните небольшую анкету, и мы свяжемся с Вами:</p>
     
     <!--Интерактивная форма-->     
     <form>
     <fieldset>
-    <legend>О вашей собаке</legend>
+    <legend>О Вашей собаке</legend>
 
     <!--Текстовые поля для имени и породы-->  
-    Имя вашей собаки <input type="text" name="nickname" placeholder="Введите имя вашей собаки" size="40">
+    <label for="nickname">Имя Вашей собаки</label>
+    <input type="text" id="nickname" placeholder="Введите имя Вашей собаки" size="40" required="required">
     <br>
     <br>
-    Порода собаки <input type="text" name="breed" placeholder="Введите породу вашей собаки" size="40">
+    <label for="breed">Порода Вашей собаки</label>
+    <input type="text" id="breed" placeholder="Введите породу Вашей собаки" size="40" required="required">
     <br>
     
     <!--Фото-->  
-    <p>При желании можете добавить фото вашей собаки</p>
+    <p>При желании можете добавить фото Вашей собаки</p>
     <input type="file" name="photo">
     <br>
     
     <!--Чиловое поле для веса-->  
     <br>
-    Вес в кг <input type="number" name="weight" placeholder="" required="required">
+    <label for="weight">Вес в кг</label>
+    <input type="number" id="weight" min="0.1" step="0.1" required="required">
     
    <!--Пол, переключатель-->  
     <p>Пол вашей собаки</p>
-    <input type="radio" name="sex" value="auto" id="boy"><label for="boy">Мальчик</label><br>
-    <input type="radio" name="sex" value="auto" id="girl"><label for="girl">Девочка</label><br>
+    <input type="radio" name="sex" value="auto" id="boy" required="required"><label for="boy">Мальчик</label><br>
+    <input type="radio" name="sex" value="auto" id="girl" required="required"><label for="girl">Девочка</label><br>
     
     <!--Дата рождения-->  
-    <p>Дата рождения вашей собаки</p>
-    <input type="date" name="birthday" min="2000-06-17" max="2022-06-17">
+    <p>Дата рождения Вашей собаки</p>
+    <input type="date" name="birthday" min="2000-06-17" max="2022-06-20" required="required">
 
     <!--Тип корма, флажки-->  
     <br>
-    <p>Чем вы кормите собаку сейчас?</p>
-    <input type="checkbox" name="type1">сухой/влажный корм<br>
-    <input type="checkbox" name="type2">сырые натуральные продукты<br>
-    <input type="checkbox" name="type3">приготовленные натуральные продукты (термообработка)<br>
+    <p>Чем Вы кормите собаку сейчас?</p>
+    <input type="checkbox" name="food">сухой/влажный корм<br>
+    <input type="checkbox" name="food">сырые натуральные продукты<br>
+    <input type="checkbox" name="food">приготовленные натуральные продукты (термообработка)<br>
     <br>
 
     <!--Активность, раскрывающийся список--> 
-    <p>Сколько часов в день вы гуляете со своей собакой?</p>
+    <p>Сколько часов в день Вы гуляете со своей собакой?</p>
     <select name="activity">
         <option>Меньше 1 часа в день</option>
         <option selected>2-3 часа в день</option>
@@ -73,13 +76,12 @@
 
     <!--Текстовые поля, телефон и емейл--> 
     <br>
-    <p>Оставьте свои контакты, и мы свяжемся с вами.</p>
-    <p>Ваш телефон</p>    
-    <input type="tel" name="phone" placeholder="Ваш номер телефона">
+    <p>Оставьте свои контакты, и мы свяжемся с Вами.</p>
+    <p><label for="phone">Ваш телефон</label>
+    <input type="tel" id="phone" placeholder="Ваш номер телефона" required="required"></p>    
+    <p><label for="mail">Ваш email</label>
+    <input type="email" id="mail" placeholder="Ваш email" required="required"></p>
    
-    <p>Ваш email</p>
-    <input type="email" name="mail" placeholder="Ваш email">
-    <br>
 
     <!--Кнопки "отправить" и "сбросить"--> 
     <br>
@@ -91,12 +93,12 @@
         
     </main>
     <footer>
-
-       
         <hr>
-        <span>&copy;&nbsp;Nose&amp;Tail</span>
-        89137577755, Татьяна
+        <span>&copy;&nbsp;Nose&amp;Tail</span><!--Копирайт--> 
         <br>
+        <span>Звоните: 89777577755, Татьяна</span>
+        <br>
+        <!--Лицензии на изображения-->
         <ul>
         <li>Лабрадор ретривер (Sokova Mary - my photo, Russia, summer 2010), лицензия: Общественное достояние.</li>
         <li>Dachshund, лицензия: <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> </li>
