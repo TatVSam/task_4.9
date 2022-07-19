@@ -1,0 +1,31 @@
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image {
+    position: relative;
+    font-size: 25px;    
+}
+
+.text {
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+}
+
+img {
+    min-height: 200px;
+    min-width: 250px;
+    object-fit: cover;
+    opacity: 70%;   
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 32px;
+}
